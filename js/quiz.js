@@ -140,6 +140,7 @@ function empezarQuiz() {
     let tablaSeleccionada = localStorage.getItem("tablaSeleccionada");
     if (tablaSeleccionada == null || tablaSeleccionada == undefined) {
         tablaSeleccionada = 9;
+        localStorage.setItem("tablaSeleccionada", tablaSeleccionada);
     }
     
     let divQuiz = document.querySelector("#quiz");
@@ -195,7 +196,7 @@ function empezarQuiz() {
     let quizresults = document.querySelector("#quizresults");
     quizresults.innerHTML = "";
 
-    var dosMinutos = 60 * 0.5;
+    var dosMinutos = 60 * 2;
     var display = document.querySelector('#time');
     startTimer(dosMinutos, display, resolverQuiz);
 

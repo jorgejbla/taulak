@@ -39,6 +39,7 @@ function load() {
     let tablaSeleccionada = localStorage.getItem("tablaSeleccionada");
     if (tablaSeleccionada == null || tablaSeleccionada == undefined) {
         tablaSeleccionada = 9;
+        localStorage.setItem("tablaSeleccionada", tablaSeleccionada);
     }
 
 console.log(tablaSeleccionada);
