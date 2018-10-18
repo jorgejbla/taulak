@@ -1,0 +1,32 @@
+#result {
+    font-size:190%;
+}
+
+tr th {
+    background-color: #eaeaea;
+    padding:0.5em;
+    text-align: left;
+}
+
+tr td {
+    padding:0.5em;
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px dotted #eaeaea;
+}
+
+.tdFallos {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tdFallos span {
+    display:block;
+    border:1px solid red;
+    padding:0.2em;
+    border-radius: 4px;
+    margin:0.2em;
+}

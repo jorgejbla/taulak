@@ -1,0 +1,131 @@
+
+
+.quizcuenta input:focus {
+    background-color: lightgreen;
+}
+
+.quizcuenta span {
+    display:block;
+    font-size:140%;
+    font-weight: bolder;
+    text-align: center;
+    padding:0.3em;
+    
+
+}
+
+#quiz {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    padding:1em;
+    margin:0 1em;
+}
+
+.quizcuenta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:1em;
+    border-bottom:2px solid #eaeaea;
+    margin:0;
+}
+
+.q_res_correcto, .q_carita {
+    flex:1;
+    border:none;
+}
+.quizcuenta span.q_res_correcto {
+    color: red;
+    font-size:200%;
+    font-weight: bolder;    
+}
+
+.quizcuenta input {
+    display:block;
+    flex:1;
+    font-size:200%;
+}
+
+.quizcuenta span.q_primero, .quizcuenta span.q_segundo {
+    flex:2;
+    font-size:200%;
+    border:1px solid #000;
+    color:#000;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+}
+
+#quizresults {
+    grid-column: 1 / -1;
+    padding: 0;
+    margin: 0;
+    border: 2px solid blue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 200%;
+}
+
+#quizresults p{
+    padding: 0;
+    margin: 0;
+}
+
+.t1 {
+    background-color: green;
+}
+
+.t2 {
+    background-color: purple;
+}
+.t3 {
+    background-color: yellow;
+}
+.t4 {
+    background-color: blue;
+}
+.t5 {
+    background-color: pink;
+}
+.t6 {
+    background-color: orange;
+}
+
+.t7 {
+    background-color: red;
+}
+.t8 {
+    background-color: lightblue;
+}
+.t9 {
+    background-color: gray;
+}
+.t10 {
+    background-color: olive;
+}
+
+#botones {
+    display: flex;
+    align-content: space-around;
+}
+
+#botones p{
+    flex:1;
+}
+
+#botones input{
+    font-size:200%;
+}
+
+#botones p#resolver{
+    text-align:right;
+}
+
+p#quiztime {
+    text-align: center;
+}
+
+p#quiztime span{
+    font-size: 250%;
+    font-weight: bolder;
+}
