@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tablas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/quiz.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav>
+                <ul>
+                        <li><a href="index.html">Probar</a></li>
+                        <li><a href="taulak.html">Taulak</a></li>
+                        <li><a class="active" href="quiz.html">Quiz</a></li>
+                        <li><a href="resultados.html">Resultados</a></li>
+                </ul>
+        </nav>
+        <fieldset id="selectTablaHasta">
+                        <select id="comboTablas">
+                            <option id="t1" value="1">1</option>
+                            <option id="t2" value="2">2</option>
+                            <option id="t3" value="3">3</option>
+                            <option id="t4" value="4">4</option>
+                            <option id="t5" value="5">5</option>
+                            <option id="t6" value="6">6</option>
+                            <option id="t7" value="7">7</option>
+                            <option id="t8" value="8">8</option>
+                            <option id="t9" value="9">9</option>
+                            <option id="t10" value="10">10</option>
+                        </select>
+                        <input type="button" id="selTable" value="Aplicar">
+                        Seleccionada hasta las tabla del: <span id="hastaTabla"></span>
+                    </fieldset>         
+        <div id="maincontent">
+        <div id="tablas">
+                <div id="botones">
+                        <p>
+                        <input type="button" id="empezarQuiz" value="Empezar">
+                        </p>
+                        <p id="quiztime"><span id="time">02:00</span></p>
+                        <p id="resolver">    
+                        <input type="button" id="resolverQuiz" value="Resolver">                    
+                        </p>
+                </div>
+                <div id="quizresults"></div>
+                <div id="quiz"></div>
+
+
+            </div>
+
+        </div>
+        <script src="js/db.js" async defer></script>
+        <script src="js/main.js" async defer></script>
+        <script src="js/quiz.js" async defer></script>
+    </body>
+</html>
