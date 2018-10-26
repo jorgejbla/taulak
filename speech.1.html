@@ -1,0 +1,43 @@
+
+<html>
+<head></head>
+<body>
+
+        <input type="text" placeholder="Escribe algo aquí"/>
+        <button onclick="hablar()">
+            Click me !
+        </button>
+        <script type="text/javascript">
+            // Predefinimos texto en el input (para el ejemplo)
+            document.querySelector('input').value = "3x2"
+            
+            // Definimos el SpeechSyn aquí arriba para 
+            // poder descargar el idioma
+            var h = new SpeechSynthesisUtterance();
+            h.lang = "es-ES";
+            
+            // Cargamos la voz de 'en-US'
+            window.speechSynthesis.onvoiceschanged = function() {
+                voices = window.speechSynthesis.getVoices();
+                
+                for ( var i=0; i<voices.length; i++ ){
+                    console.log(voices[i]['lang']);
+                    if ( voices[i]['lang'] == 'es-ES'  ){
+                        h.voice = voices[i];
+                    }
+                }
+            };
+            
+            // Nuestra funcion.
+            hablar = function(){
+                h.text = document.querySelector('input').value;
+                speechSynthesis.speak(h);
+            }
+             </script>
+</body>
+</html>
+
+
+
+
+

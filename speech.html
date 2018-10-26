@@ -1,0 +1,22 @@
+<script type="text/javascript">
+    var u = new SpeechSynthesisUtterance();
+    u.text = '3x2';
+    u.lang = 'eu-ES';
+
+    u.rate = 1.2;
+
+
+    u.onvoiceschanged = function() {
+        voices = window.speechSynthesis.getVoices();
+        for ( var i=0; i<voices.length; i++ ){
+            console.log(voices[i]['lang']);
+            if ( voices[i]['lang'] == 'eu-ES'  ){
+                u.voice = voices[i];
+            }
+        }
+    };
+
+
+    u.onend = function(event) { alert('Finished in ' + event.elapsedTime + ' seconds.'); }
+    speechSynthesis.speak(u);
+ </script>
