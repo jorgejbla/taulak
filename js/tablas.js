@@ -28,6 +28,8 @@ function calcular() {
         document.querySelector(".angryface").setAttribute("style", "display:block;"); 
         document.querySelector("#result").innerHTML=resultadoReal;      
         document.querySelector("#result").setAttribute("style", "display:block;"); 
+
+        mostrarCorrecto(resultadoReal);
     }
 }
 
@@ -56,6 +58,9 @@ console.log(tablaSeleccionada);
 
     primeroElem.innerHTML= primeroRandom;
     segundoElem.innerHTML= segundoRandom;
+
+    const textoAudio = primeroRandom + "x" + segundoRandom;
+    leerTexto(textoAudio);
 
     primeroElem.setAttribute("class", "taulak"+primeroRandom);
     segundoElem.setAttribute("class", "taulak"+segundoRandom);
